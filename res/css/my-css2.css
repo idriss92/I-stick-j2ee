@@ -1,0 +1,237 @@
+body
+{
+	width: 100%;
+	margin: auto; /* Pour centrer notre page */
+	margin-top: 5px; /* Pour éviter de coller avec le haut de la fenêtre du navigateur. Essayez d'enlever pour voir ! */
+	margin-bottom: 30px;    /* Idem pour le bas du navigateur */
+	background-attachment: fixed; 
+	float : center;
+
+}
+#entete
+{	 	
+	font-size :25px;   	
+	text-align: center;
+	width: 65%;
+	
+	background: #FFEFB6 ;
+	border: 1px solid #600; 
+	border-radius: 10px;
+	font-size :25px;
+}
+#bandeau
+{	
+	float : center;
+	text-align: center;
+	width: 65% ;
+    border: 1px solid #900 ; 
+    background: #FFEFB6 ;
+	border-radius: 10px;
+}
+#corps
+{	
+   margin-top: 2%;
+   margin-left: 10%; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+   margin-bottom: 5%; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+   padding: 2px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+   width: 65% ; 
+   height: *%; 
+   background-position:bottom;
+   background-repeat: repeat-x; /* Une petite image de fond qui se répètera horizontalement en haut */
+   border: 2px solid black; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+   background-repeat: no-repeat;
+   background-color : ;
+   border-radius: 10px;
+   font-size :35px;
+}
+#panneauDroit
+{
+   float :right;
+   width: 10% ; 
+   height: 100%	; 
+   background-color :#BD8D46; 
+   border-radius: 10px;
+}
+#panneauGauche
+{
+   float :left;
+   width: 10% ; 
+   height: 100%; 
+   background-repeat:  repeat;
+   background-color :#BD8D46; 
+   border-radius: 10px;	
+}
+#connexion
+{  margin-top: 100px;
+   width: 60% ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#FCFAE1; 
+}
+#pied 
+{ 	
+    float : center;
+	text-align: center;
+	width: 65% ;
+	background: #F6E497;   
+	border: 1px solid #600 ; 
+	display: float-left;
+	border-radius: 10px;
+ }
+#categories
+{
+	float : center;
+	text-align: center;
+	width: 65% ;
+    border: 1px solid #900 ; 
+    background: #FFEFB6 ;
+	border-radius: 10px;
+}
+#vue
+{	
+	margin-top: 100px;
+	width: 60% ;
+	height: *px; 
+	background-repeat: no-repeat;
+	text-decoration:none;	
+}
+#vue2
+{	
+	margin-top: 100px;
+	width: 65%;
+	height: *px; 
+	background-repeat: no-repeat;
+	text-decoration:none;	
+}
+#produit
+{  
+   margin-top: 80px;
+   width: 65% ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#FFFAF4  
+}
+#produitAdmin
+{  
+   margin-top: 50px;
+   width: 65% ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#FFFAF4  
+}
+#utilisateurs
+{  float:center;
+   margin-top: 100px;
+   width: 67% ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#FFFAF4 ; 
+}
+#decoration
+{
+   width: 50% ;
+   right:160px;
+   background-repeat: no-repeat;
+   background-color :#E6E2AF;   
+}
+#message
+{  
+   margin-top: *px;
+   width: 65% ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#A67E2E;
+   font-size :25px;
+}
+ 
+/* CSS en tete */
+ b1.en_tete
+{
+   color:#F20000;
+   font-family: Andalus;
+   font-size :70px;
+}
+/* titre */
+ b1.titre
+{
+    color:#52251C;
+   font-family: Andalus;
+	font-size :60px;
+}
+/* css bandeau */
+  b2.bandeau
+{
+    color:#663E10;
+   font-family: Andalus;
+	font-size :30px;
+ }
+/* administrateur / newsletter / se deconnecter */ 
+ b2.ans
+{
+    color:#663E10;
+   font-family: Andalus;
+	font-size : 25px;
+ }
+ prix.lePrix
+ {
+   color: #FFFAF4;
+   font-size :17px;
+ }
+ cat.desir
+ {
+    color:#191919;
+    font-family: Andalus;
+	font-size :25px;
+ 
+ }
+ monlabel.desir
+ {
+   color: #080004;
+      font-family: Andalus;
+   font-size :25px;
+ }
+c2.texte
+{
+  font-size :23px;
+}
+c3.texte
+{
+  font-size :20px;
+}
+/* categorie */
+c4.texte
+{
+  font-size :30px;
+   color:#B9121B;
+}
+larissa.simpore
+{
+  font-size :25px;
+}
+ajout.produit
+{
+  font-size : 30px;
+}
+.input {
+    border: 1px solid #000;
+    
+}
+.button {
+    border: none;
+    background: url('/forms/up.png') no-repeat top left;
+    padding: 2px 8px;
+}
+.button:hover {
+    border: none;
+    background: url('/forms/down.png') no-repeat top left;
+    padding: 2px 8px;
+}
+/* CSS formulaire */
+.form_col {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 3px 0px;
+  width: 200px;
+  min-height: 1px;
+  text-align: right;
+}

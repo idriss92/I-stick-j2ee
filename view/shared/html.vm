@@ -1,0 +1,10 @@
+<html>
+   <head>
+     <title>$context.getTitle()</title>
+   </head>
+   <body>
+    $context.getFragment("shared/main_header")
+    $context.getFragment("__CURRENT__")
+    $context.getFragment("shared/main_footer")
+   </body> 
+</html>

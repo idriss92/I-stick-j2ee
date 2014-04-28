@@ -1,0 +1,15 @@
+<a href="../upload/">Upload a  File/</a>
+<br>
+<br>
+<br>
+#set ($files = $context.getAttribute("files") )
+<ul>
+	#foreach ($file in $files)
+		<li>$file.getName()
+			<a href="/eRoute/file/delete/$file.getName()"/>Supprimer</a>
+			<a href="/eRoute/file/FileDownload/$file.getName()"/>Download</a>
+		</li>
+	#end  
+</ul>
+
+

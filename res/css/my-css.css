@@ -1,0 +1,227 @@
+body
+{
+	width: 1300px;
+	margin: auto; /* Pour centrer notre page */
+	margin-top: 30px; /* Pour éviter de coller avec le haut de la fenêtre du navigateur. Essayez d'enlever pour voir ! */
+	margin-bottom: 30px;    /* Idem pour le bas du navigateur */
+	float : center;
+}
+#entete
+{	 
+   	text-align: center;
+	width: 1300px ;
+	height : 110px;
+	background: #FFEFB6 ;
+	border: 1px solid #600; 
+	/*background:url('decoration/blue_back_ground.jpg');*/
+}
+#bandeau
+{	
+	float : center;
+	text-align: center;
+	width: 1300px ;
+	height: 50px;
+    border: 1px solid #900 ; 
+    background: #FFEFB6 ;
+}
+#corps
+{
+	
+   margin-left: 150px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+   margin-bottom: 20px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+   padding: 5px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+   width: 1300px ; 
+   height: 800px; 
+   background-position:bottom;
+   background-repeat: repeat-x; /* Une petite image de fond qui se répètera horizontalement en haut */
+   
+   border: 2px solid black; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+   background-repeat: no-repeat;
+   background-color : ;
+}
+#panneauDroit
+{
+   margin-top: 1px;
+   float :right;
+   width: 309px ; 
+   height: 1009px; 
+   background-color :#BD8D46; 
+}
+#panneauGauche
+{
+   margin-top: 1px;
+   float :left;
+   width: 309px ; 
+   height: 1009px; 
+   background-repeat:  repeat;
+   background-color :#BD8D46; 
+}
+#connexion
+{  margin-top: 100px;
+   width: 1300px ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#FCFAE1; 
+}
+#pied 
+{   margin-top: 650px;
+	background: #046380 ;
+	width: 1300px ;
+	border: 1px solid #600 ; 
+	position: absolute;
+}
+#categories
+{
+	position: fixed;
+	
+	background: #F6E497;
+	width: 90px ; 
+	height: *px ; 
+	border: 1px solid #600 ; 
+	display: float-left;
+}
+#vue
+{	
+	margin-top: 100px;
+	width: 900px ;
+	height: *px; 
+	background-repeat: no-repeat;
+	text-decoration:none;	
+}
+#vue2
+{	
+	margin-top: 100px;
+	width: 900px ;
+	height: *px; 
+	background-repeat: no-repeat;
+	text-decoration:none;	
+}
+#produit
+{  
+   margin-top: 100px;
+   width: 1250px ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#FFFAF4  
+}
+#utilisateurs
+{  float:center;
+   margin-top: 100px;
+   width: 1250px ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#FFFAF4 ; 
+}
+#decoration
+{
+   margin-top: 1500px;
+   top:234px;
+   width: 600px ;
+   right:160px;
+   background-repeat: no-repeat;
+   background-color :#E6E2AF;
+}
+#message
+{  
+   margin-top: *px;
+   width: 1300px ;
+   height: *px; 
+   background-repeat: no-repeat;
+   background-color :#A67E2E; 
+}
+
+/* CSS en tete */
+ b1.en_tete
+{
+    color:#F20000;
+   lolfont-family: Andalus;
+	font-size :50px;
+}
+/* titre */
+ b1.titre
+{
+    color:#52251C;
+   font-family: Andalus;
+	font-size :50px;
+}
+/* css bandeau */
+  b2.bandeau
+{
+    color:#663E10;
+   font-family: Andalus;
+	font-size :25px;
+ }
+   b2.ans
+{
+    color:#663E10;
+   font-family: Andalus;
+	font-size :20px;
+ }
+ 
+ 
+/* CSS formulaire */
+ 
+
+.form_col {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 3px 0px;
+  width: 200px;
+  min-height: 1px;
+  text-align: right;
+}
+
+input {
+  padding: 2px;
+  border: 1px solid #CCC;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+input:focus {
+  border-color: rgba(82, 168, 236, 0.75);
+  -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+  box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+.correct {
+  border-color: rgba(68, 191, 68, 0.75);
+}
+
+.correct:focus {
+  border-color: rgba(68, 191, 68, 0.75);
+  -moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+  -webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+  box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+
+.incorrect {
+  border-color: rgba(191, 68, 68, 0.75);
+}
+
+.incorrect:focus {
+  border-color: rgba(191, 68, 68, 0.75);
+  -moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+  -webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+  box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+#vue2
+{	
+	margin-top: 100px;
+	width: 900px ;
+	height: *px; 
+	background-repeat: no-repeat;
+	text-decoration:none;	
+}
+.tooltip {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 2px 4px;
+  border: 1px solid #555;
+  background-color: #CCC;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
