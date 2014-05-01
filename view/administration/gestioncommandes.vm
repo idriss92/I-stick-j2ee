@@ -1,0 +1,21 @@
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href=$context.getProperties().get("context")/res/css/ext-all.css>
+    <link rel="stylesheet" type="text/css" href=$context.getProperties().get("context")/res/css/xtheme-blue.css>
+    <link rel="stylesheet" type="text/css" href=$context.getProperties().get("context")/res/css/statusbar.css>
+    
+    
+    <script type="text/javascript" src=$context.getProperties().get("context")/res/script/ext-base.js></script>
+    <script type="text/javascript" src=$context.getProperties().get("context")/res/script/ext-all.js></script>
+    <script type="text/javascript" src=$context.getProperties().get("context")/res/script/StatusBar.js></script>
+    
+    <!-- js view -->
+	<script type="text/javascript" src=$context.getProperties().get("context")/res/script/view/gestioncommandes.js></script>
+	<!--Fin--> 
+	</head>
+
+	<body>
+						gestion commm
+	</body>
+
+</html>
