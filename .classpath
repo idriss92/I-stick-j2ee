@@ -18,5 +18,9 @@
 	<classpathentry kind="lib" path="C:/Users/joaany/Documents/javaee/joanny/workspace/EsgiRouter/WEB-INF/lib/org.apache.commons.collections.jar"/>
 	<classpathentry kind="lib" path="C:/Users/joaany/Documents/javaee/joanny/workspace/EsgiRouter/WEB-INF/lib/org-apache-commons-lang.jar"/>
 	<classpathentry kind="lib" path="C:/Users/joaany/Documents/javaee/joanny/workspace/EsgiRouter/WEB-INF/lib/velocity-1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joaany/Dropbox/zip/google-gson-2.2.4-release/google-gson-2.2.4/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joaany/Dropbox/zip/google-gson-2.2.4-release/google-gson-2.2.4/gson-2.2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joaany/Dropbox/zip/google-gson-2.2.4-release/google-gson-2.2.4/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joaany/Downloads/mysql-connector-java-2.0.14/mysql-connector-java-2.0.14/mysql-connector-java-2.0.14-bin.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>
