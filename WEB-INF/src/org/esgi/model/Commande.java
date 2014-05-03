@@ -14,5 +14,12 @@ public class Commande {
 	public String toString() {
 		return "Commande [num_commande=" + num_commande + ", date=" + date
 				+ ", id_utilisateur=" + id_utilisateur + "]";
+	}
+
+	public Commande(int num_commande, Date date, int id_utilisateur) {
+		super();
+		this.num_commande = num_commande;
+		this.date = date;
+		this.id_utilisateur = id_utilisateur;
 	}	
 }
