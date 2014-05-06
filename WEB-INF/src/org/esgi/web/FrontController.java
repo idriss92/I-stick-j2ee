@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.velocity.app.Velocity;
 import org.esgi.administration.Administration;
+import org.esgi.administration.GestionCommandes;
 import org.esgi.module.file.FileList;
 import org.esgi.module.file.FileUpload;
 import org.esgi.structure.Accueil;
@@ -62,12 +63,9 @@ public class FrontController extends HttpServlet{
 
 		registerAction(new FileList());
 		registerAction(new Administration());
-	//	registerAction(new FileDownload());
+		registerAction(new GestionCommandes());
 		registerAction(new FileUpload());
 		registerAction(new Accueil());
-		//registerAction(new FileDelete());
-		//registerAction(new Index());
-		//registerAction(new Connect());
 		
 		layoutRender = new LayoutRenderer();
 	}
@@ -81,8 +79,6 @@ public class FrontController extends HttpServlet{
 		IAction action = router.find(url, context);
 
 		properties.put("context", request.getContextPath());
-
-
 		if (null != action){
 
 			if (null == action.getLayout()) {
@@ -100,7 +96,6 @@ public class FrontController extends HttpServlet{
 				}
 			}
 		}
-
 	}
 
 	private IContext createContext(HttpServletRequest request, 

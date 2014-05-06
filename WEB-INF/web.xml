@@ -3,8 +3,6 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd">
  
 <web-app>
-
-
 	<context-param>
 		<param-name>config</param-name>
 		<param-value>./config.ini</param-value>
@@ -19,6 +17,16 @@
 		</servlet-class>
 	</servlet>
 	
+	
+	<servlet>
+		<servlet-name>
+			json_render
+		</servlet-name>
+		<servlet-class>
+			org.esgi.administration.JsonRenderCommande
+		</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>/res/*</url-pattern>
@@ -29,4 +37,9 @@
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 
+	<servlet-mapping>
+		<servlet-name>json_render</servlet-name>
+		<url-pattern>/json_render/*</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

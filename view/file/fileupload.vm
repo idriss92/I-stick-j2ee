@@ -1,1 +1,3 @@
 file Upload
+
+{{ include('filelist.vm', sandboxed = true) }}

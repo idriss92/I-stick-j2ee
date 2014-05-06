@@ -1,27 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href=$context.getProperties().get("context")/res/css/ext-all.css>
+    <link rel="stylesheet" type="text/css" href="https://www.ma-gic.net/assets/js/ext-3.3.1/resources/css/xtheme-blue.css"/>
+    <script type="text/javascript" src="https://www.ma-gic.net/assets/js/ext-3.3.1/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="https://www.ma-gic.net/assets/js/ext-3.3.1/ext-all.js"></script>
+    <script type="text/javascript" src="https://www.ma-gic.net/assets/js/ext_plugins/statusbar/StatusBar.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ma-gic.net/assets/js/ext_plugins/statusbar/css/statusbar.css"/>
+    
+    <!-- js view -->
+	<script type="text/javascript" src=$context.getProperties().get("context")/res/script/view/menu_administration.js></script>
+	<!--Fin--> 
+	</head>
 
-<html lang="fr">
-<head>
-	<title>Bienvenue chez .:I-Stick - Administration:.</title>
-	<link rel="stylesheet" href=$context.getProperties().get("context")/res/css/my-css.css>
-	<link rel="stylesheet" href=$context.getProperties().get("context")/res/css/my-css2.css>
-	<link rel="stylesheet" href=$context.getProperties().get("context")/res/css/ext-all.css>
+	<body>
+							<!-- Boby vide-->
+	</body>
 
-	
-	<script type="text/javascript" src=$context.getProperties().get("context")/res/script/ext-base.js></script>
-	<script type="text/javascript" src=$context.getProperties().get("context")/res/script/ext-all.js></script>
-	
-	
-	<script type="text/javascript" src="https://www.ma-gic.net/assets/js/ext_plugins/statusbar/StatusBar.js"></script>
-	
-	<script type="text/javascript" src=$context.getProperties().get("context")/res/script/administration.js></script>
-</head>
-
-
-<body>
-
-<?php echo "ok" ?>
-</body>
-
-</html>	
+</html>

@@ -102,7 +102,7 @@ public class LayoutRenderer {
 		if(new File(root +  templateName + ".vm").exists()){
 			return templateName + ".vm";
 		}
-		else return null;
+		 return null;
 	}
 
 }

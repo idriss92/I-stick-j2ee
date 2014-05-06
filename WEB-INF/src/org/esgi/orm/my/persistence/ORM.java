@@ -31,19 +31,20 @@ public class ORM implements IORM {
 	static {
 		instance = new ORM();
 		mysqlHost = "localhost";
-		mysqlDatabase = "esgi";
-		mysqlUser = "root";
-		mysqlPassword = "";
+		mysqlDatabase = "test";
+		mysqlUser = "rootp";
+		mysqlPassword = "rootp";
 	}
 	
-	public static Object save(Object o) {
+	public static Object save(Objemct o) {
 		return instance._save(o);
 	}
-
+	
+	
 	public static Object load(Class<?> c, Object id) {
 		return instance._load(c, id);
 	}
-
+	
 	public static boolean remove(Class<?> c, Object id) {
 		return instance._remove(c, id);
 	}
@@ -479,6 +480,66 @@ public class ORM implements IORM {
 			e.printStackTrace();
 		}
 	}
+
+	
+	public static Object getItem(Class<?> c) {
+		return instance._getItem(c);
+	}
+	
+	private static String getTableName(){
+		return "utilisateur";
+	}
+	
+	
+	@Override
+	public Object _getItem(Class<?> c) {
+		Object o = null;
+		
+		//get a connection object
+		Connection connection = createConnectionObject();
+		
+		//get the id 
+		
+		//build the query
+		String tableName = getTableName(c);
+		StringBuilder query = new StringBuilder();
+		query.append("SELECT * from "+tableName);
+		
+		//build the result
+		try {
+			//instantiates an empty returnable object
+			o = c.newInstance();
+			 
+			//send the query
+			PreparedStatement ps = connection.prepareStatement(query.toString());
+			ResultSet result = ps.executeQuery();
+			result.beforeFirst();
+			result.next();
+			
+			//parse the result fields
+			ResultSetMetaData rsmd = (ResultSetMetaData) result.getMetaData();
+			int columnCount = rsmd.getColumnCount();
+			for(int i=1; i<=columnCount; i++){
+				System.out.println(result.getString(i));
+				int valueType = rsmd.getColumnType(i);
+				Field f = c.getField(rsmd.getColumnName(i));
+				
+				if(valueType == Types.INTEGER){
+					f.setInt(o, result.getInt(i));
+					continue;
+				}
+
+				f.set(o, result.getString(i));
+				
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return o;
+	}
+
+
 }
 
 
